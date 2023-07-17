@@ -1,28 +1,32 @@
 # PHP
+=
 Leveraging PHP to plan, design, construct, and integrate server-side components of modern Web applications, including forms and databases.
 
 
-General Notes for any Relational Database Driven Website:
+General Notes for any Relational Database Driven Website: 
+=
 
 The very first steps to do always is to connect our current php app. to our database, we need to have these information ready: a- the server name (hosting name) => usually "localhost" by default b- the database name => Our current example: "pdo_intro" c- the database credentials: the username and the password > -- username: root (by default when installing XAMPP) => User: root@localhost > -- password: "" (Null by default installing XAMPP)
 
 For practising what we have in a real world project, we will modify the phpMyAdmin to change its default settings. We will add a simple password instead of using an empty one for simplicity, we will use this simple password for example: "root123". please refer to my in-class notes for changing/modifying the password
 
-As conclusion:
+As conclusion: 
+=
 
 username: root (the same by default)
 password: root123 (Just for local demonstration and learning purposes)
 These will be the "global" credential (username and password) to access all the databases in phpMyAdmin of "localhost".
 
 IMPORTANT NOTE: 
+=
 Please be advised that I had to set a different PORT number/value to run MySQL DBMS. The default PORT Number that is used by XAMPP to run MySQL (PHPMyAdmin) is: 3306 But I had to change it to 3307 because 3306 is used by MySQL Workbench DBMS For this reason, my host value will be 'localhost:3307' instead of just 'localhost'
 
 PHP and MySQL:
-
+=
 PHP provides three different ways to connect to MySQL database. The technical term is API (Application Programming Interface), so PHP provides three APIs to connect to MySQL. In a nutshell, API is just a set of built-in functions that define or specify the way the we as developer can use the software.
 
 Database APIs in PHP:
-
+=
 First: (the original one since PHP 2) MySQL API: mysql
 The basic way to connect to MySQL (became obsolete since PHP 7)
 Second: The improved API: msyqli
@@ -38,6 +42,7 @@ Supports only Object-Oriented programming (Object-Oriented Interfaces)
 NOTE: Using the Object-Oriented Interface, even with MySQLi is a modern way of coding since the code will be more concise (short/brief) and this will make our code easier to read and maintain.
 
 USING PDO:
+=
 In our code example we will focus on using PDO API (refer to my in-class notes for for details) PDO can support many databases: https://www.php.net/manual/en/pdo.drivers.php#pdo.drivers
 
 Prepared Statements:
@@ -63,7 +68,7 @@ Connect to the database
 Creating folder named "include" that contains the php file for connecting our application to the required database. There is a folder named "includes" that has the file(s) for connecting to the database
 
 We can use any meaningful name for this file, examples:
-
+=
 db_connect.php
 db_link.php
 db_config.php
@@ -80,6 +85,9 @@ PDO (Native PHP Class) has many "static" constants. To access one of the predifi
 The PHP Class name is "PDO" so our code will be: > PDO::CONSTANT_NAME > the double colon :: is called or known as the "Scope Resolution Operator" > https://www.w3schools.com/php/php_oop_constants.asp
 
 PDO class has many methods:
+=
 
 Calling any of the PDO methods will return an object
 This returned object contains the result of a query or a prepared statement
+
+Note: Credit goes to Mr. Anmar Jarjees for the documentation
