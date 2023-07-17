@@ -3,6 +3,7 @@ Leveraging PHP to plan, design, construct, and integrate server-side components 
 
 
 General Notes for any Relational Database Driven Website:
+
 The very first steps to do always is to connect our current php app. to our database, we need to have these information ready: a- the server name (hosting name) => usually "localhost" by default b- the database name => Our current example: "pdo_intro" c- the database credentials: the username and the password > -- username: root (by default when installing XAMPP) => User: root@localhost > -- password: "" (Null by default installing XAMPP)
 
 For practising what we have in a real world project, we will modify the phpMyAdmin to change its default settings. We will add a simple password instead of using an empty one for simplicity, we will use this simple password for example: "root123". please refer to my in-class notes for changing/modifying the password
@@ -13,9 +14,11 @@ username: root (the same by default)
 password: root123 (Just for local demonstration and learning purposes)
 These will be the "global" credential (username and password) to access all the databases in phpMyAdmin of "localhost".
 
-IMPORTANT NOTE: Please be advised that I had to set a different PORT number/value to run MySQL DBMS. The default PORT Number that is used by XAMPP to run MySQL (PHPMyAdmin) is: 3306 But I had to change it to 3307 because 3306 is used by MySQL Workbench DBMS For this reason, my host value will be 'localhost:3307' instead of just 'localhost'
+IMPORTANT NOTE: 
+Please be advised that I had to set a different PORT number/value to run MySQL DBMS. The default PORT Number that is used by XAMPP to run MySQL (PHPMyAdmin) is: 3306 But I had to change it to 3307 because 3306 is used by MySQL Workbench DBMS For this reason, my host value will be 'localhost:3307' instead of just 'localhost'
 
 PHP and MySQL:
+
 PHP provides three different ways to connect to MySQL database. The technical term is API (Application Programming Interface), so PHP provides three APIs to connect to MySQL. In a nutshell, API is just a set of built-in functions that define or specify the way the we as developer can use the software.
 
 Database APIs in PHP:
@@ -38,6 +41,7 @@ USING PDO:
 In our code example we will focus on using PDO API (refer to my in-class notes for for details) PDO can support many databases: https://www.php.net/manual/en/pdo.drivers.php#pdo.drivers
 
 Prepared Statements:
+=
 Both MySQLi and PDO support something in PHP called "Prepared Statements" that can add more security features when we communicate to our database.
 It's a template for SQL query (SQL Statement) that uses/includes values from the user input or hard-coded values
 It contains what it's called “Placeholders” for the values that we store in variables. These placeholders could be just the symbol (?) when using MySQLi or with PDO, it could be also the colon (:) and the identifier name which is just any variable name that we can pick to refer to the values we want to use with the query (we learn later)
