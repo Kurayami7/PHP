@@ -90,6 +90,10 @@ PDO class has many methods:
 Calling any of the PDO methods will return an object
 This returned object contains the result of a query or a prepared statement
 
+
+# How to use:
+
+
 Note:
 -
 Credit goes to Mr. Anmar Jarjees for the documentation
