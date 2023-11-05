@@ -92,6 +92,7 @@ This returned object contains the result of a query or a prepared statement
 
 
 # How to use:
+The method I recommend is to download and install XAMPP. Clone the repository into your choice of editor and navigate to the directory via XAMPP's localhost.
 
 
 Note:
