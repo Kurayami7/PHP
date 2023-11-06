@@ -2,6 +2,8 @@
 
 Leveraging PHP to plan, design, construct, and integrate server-side components of modern Web applications, including forms and databases.
 
+# Live Demo for Week 7 Site:
+https://the-sea-spa.netlify.app/
 
 General Notes for any Relational Database Driven Website: 
 =
