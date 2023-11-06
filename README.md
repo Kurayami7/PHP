@@ -5,6 +5,10 @@ Leveraging PHP to plan, design, construct, and integrate server-side components 
 # Live Demo for Week 7 Site:
 https://the-sea-spa.netlify.app/
 
+## Video Demo
+https://github.com/Kurayami7/PHP/assets/124408792/fe36938c-22ce-4af6-a416-459803b688c9
+
+
 General Notes for any Relational Database Driven Website: 
 =
 
