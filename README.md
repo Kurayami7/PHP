@@ -2,6 +2,12 @@
 
 Leveraging PHP to plan, design, construct, and integrate server-side components of modern Web applications, including forms and databases.
 
+# Live Demo for Week 7 Site:
+https://the-sea-spa.netlify.app/
+
+## Video Demo
+https://github.com/Kurayami7/PHP/assets/124408792/fe36938c-22ce-4af6-a416-459803b688c9
+
 
 General Notes for any Relational Database Driven Website: 
 =
@@ -89,6 +95,11 @@ PDO class has many methods:
 
 Calling any of the PDO methods will return an object
 This returned object contains the result of a query or a prepared statement
+
+
+# How to use:
+The method I recommend is to download and install XAMPP. Clone the repository into your choice of editor and navigate to the directory via XAMPP's localhost.
+
 
 Note:
 -
